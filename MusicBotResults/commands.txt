@@ -9,9 +9,6 @@ above command yields 62
 Command to run EvoSuite on all "testable" classes n calc. branch covg.:
 %EVOSUITE% -target C:\Users\Petros\Downloads\CS520\finalProject\MusicBotEvoSuite\MusicBot\target\classes -criterion branch > MusicBotOutput.txt
 
-above command shit the bed so try command with added flag:
-%EVOSUITE% -mem 4096 -target C:\Users\Petros\Downloads\CS520\finalProject\MusicBotEvoSuite\MusicBot\target\classes -criterion branch > MusicBotOutput.txt
-
 avg branch coverage: 0.5923389
 
 command for audio package:
