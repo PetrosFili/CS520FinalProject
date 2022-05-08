@@ -1,0 +1,60 @@
+Command to run tests on all classes:
+%EVOSUITE%  -mem 4096 -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutput.txt
+
+TESTING BY PACKAGE:
+
+MODEL package
+1. go into folder you want the evosuite output for MODEL classes to go
+2. run below command to generate tests & generate output files
+
+%EVOSUITE% -prefix com.eteks.sweethome3d.model -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputModel.txt
+
+3. go into sweethome3d folder containing the compiled classes and run below command to compare # classes
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\model | find /c /v ""
+
+# of testable MODEL classes: 47
+
+Repeat for rest of packages.
+
+APPLET:
+%EVOSUITE% -prefix com.eteks.sweethome3d.applet -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputApplet.txt
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\applet | find /c /v ""
+# testable classes: 8
+
+IO:
+%EVOSUITE% -prefix com.eteks.sweethome3d.io -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputIO.txt
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\io | find /c /v ""
+# testable classes: 21
+
+J3D:
+%EVOSUITE% -prefix com.eteks.sweethome3d.j3d -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputJ3D.txt
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\j3d | find /c /v ""
+# testable classes: 20
+
+PLUGIN:
+%EVOSUITE% -prefix com.eteks.sweethome3d.plugin -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputPlugin.txt
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\plugin | find /c /v ""
+# testable classes: 4
+
+SWING:
+%EVOSUITE% -prefix com.eteks.sweethome3d.swing -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputSwing.txt
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\swing | find /c /v ""
+# testable classes: 62
+
+TOOLS:
+%EVOSUITE% -prefix com.eteks.sweethome3d.tools -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputTools.txt
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\tools | find /c /v ""
+# testable classes: 6
+
+VIEWCONTROLLER:
+%EVOSUITE% -prefix com.eteks.sweethome3d.viewcontroller -projectCP C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes -criterion branch > SweetHomeOutputViewController.txt
+
+%EVOSUITE% -listClasses -target C:\Users\Petros\Downloads\CS520\finalProject\SweetHomeEvoSuite\sweethome3d-code-r8266-trunk-SweetHome3D\sweethome3d-code-r8266-trunk-SweetHome3D\build\classes\com\eteks\sweethome3d\viewcontroller | find /c /v ""
+# testable classes: 32
