@@ -12,8 +12,8 @@ Each project has a results folder, which contains the following:
 
 -A text file containing commands used to run EvoSuite
 
--auto generated evosuite-report folder containing a statistics.csv
+-An auto generated evosuite-report folder containing a statistics.csv
  file that gives branch coverage per class
 
--auto generated evosuite-tests folder that has Java files containing
- the auto generated tests.
+-An auto generated evosuite-tests folder that has Java files containing
+ the auto generated tests
