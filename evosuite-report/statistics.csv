@@ -1,0 +1,11 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+com.jagrosh.jmusicbot.audio.AloneInVoiceHandler,BRANCH,0.043478260869565216,23,1
+com.jagrosh.jmusicbot.audio.QueuedTrack,BRANCH,0.0,5,0
+com.jagrosh.jmusicbot.audio.RequestMetadata,BRANCH,0.25,4,1
+com.jagrosh.jmusicbot.entities.Pair,BRANCH,1.0,3,3
+com.jagrosh.jmusicbot.entities.Prompt,BRANCH,0.9354838709677419,31,29
+com.jagrosh.jmusicbot.gui.ConsolePanel,BRANCH,1.0,1,0
+com.jagrosh.jmusicbot.gui.GUI,BRANCH,0.1,10,1
+com.jagrosh.jmusicbot.gui.TextAreaOutputStream,BRANCH,0.9473684210526315,19,18
+com.jagrosh.jmusicbot.queue.FairQueue,BRANCH,0.6470588235294118,34,22
+com.jagrosh.jmusicbot.settings.RepeatMode,BRANCH,1.0,2,2
